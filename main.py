@@ -22,7 +22,7 @@ def main():
         file.write(portfolio_stats)
     
     plt.figure(figsize=(10, 6))
-    portfolio.holdings['value'].plot(title="Portfolio Value Over Time", xlabel="Date (M)", ylabel="Portfolio Value ($)")
+    portfolio.holdings['value'].plot(title=f"Portfolio Value Over Time({portfolio.ticker1} & {portfolio.ticker2}, {portfolio.short}d vs {portfolio.long}d)", xlabel="Date (M)", ylabel="Portfolio Value ($)")
     plt.grid(True)
     plt.savefig(f'{portfolio.ticker1}_{portfolio.ticker2}_{portfolio.short}d_vs_{portfolio.long}d_value.png')
     plt.close()
@@ -32,7 +32,7 @@ def main():
     plt.figure(figsize=(12, 6))
     plt.plot(portfolio.holdings.index, position1, label=f'{portfolio.ticker1} Position Value')
     plt.plot(portfolio.holdings.index, position2, label=f'{portfolio.ticker2} Position Value')
-    plt.title("Cumulative Portfolio Position Values Over Time (Dynamic Weights)")
+    plt.title(f"Portfolio Positions Over Time ({portfolio.ticker1} & {portfolio.ticker2}, {portfolio.short}d vs {portfolio.long}d)")
     plt.xlabel("Date")
     plt.ylabel("Portfolio Value ($)")
     plt.legend()
