@@ -1,0 +1,6 @@
+Portfolio Statistics: HYG vs LQD, 21d vs 252d
+Annualized Return:       3.8727%
+Annualized Std Dev:      5.5868%
+Sharpe Ratio:            -0.0595
+Cumulative Return:       3.8727%
+Maximum Drawdown:        -4.3040%

@@ -1,0 +1,6 @@
+Portfolio Statistics: HYG vs LQD, 10d vs 42d
+Annualized Return:       6.1149%
+Annualized Std Dev:      5.3108%
+Sharpe Ratio:            0.3596
+Cumulative Return:       6.1149%
+Maximum Drawdown:        -2.9053%
